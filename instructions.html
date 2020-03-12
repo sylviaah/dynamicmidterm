@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Instructions</title>
+        <link rel="stylesheet" href="instructions.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+    <body>
+        <div class="open" onclick="instructionsToggle()">Open Instructions</div>
+
+        <!-- Instructions start -->
+        <div class="instructions_overlay">
+            <div class="instructions_modal">
+                <i class="material-icons close" onclick="instructionsToggle()">cancel</i>
+                <h1>Instructions</h1>
+                <div class="instructions_slider">
+                    <i class="material-icons arrow_left" onclick="previous()">play_circle_filled</i>
+                    <div class="image_div">
+                        <img class="instructions_image" src="imgs/img1.jpg" alt="">
+                    </div>
+                    <div><i class="material-icons arrow_right" onclick="next()">play_circle_filled</i></div>
+                </div>
+                <p class="instructions_text">1. Click on the Start button to start reading through the comic.</p>
+                <div class="instructions_button" onclick="instructionsToggle()">OK, got it!</div>
+            </div>
+        </div>
+        <!-- Instructions end -->
+        
+        <script src="instructions.js"></script>
+    </body>
+</html>
