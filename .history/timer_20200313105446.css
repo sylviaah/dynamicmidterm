@@ -1,0 +1,46 @@
+.timer {
+    margin: 50px;
+    visibility: hidden;
+    width: 100px; 
+    height: 100px;
+    border-radius: 50%;
+    background: lightcoral;
+    background-image: 
+    linear-gradient(to right, transparent 50%, darkred 0);
+  }
+
+.innerTimer {
+    content: '';
+    display: none;
+    margin-left: 50%;
+    height: 100%;
+    border-radius: 0 100% 100% 0 / 50%;
+    background-color: lightcoral;
+    transform-origin: left;
+    transform: rotate(0deg);
+    animation: spin 5s linear infinite,
+                bg 10s step-end infinite;
+}
+  
+@keyframes spin {
+    to { transform: rotate(.5turn); }
+  }
+  
+@keyframes bg {
+    50% { background: darkred; }
+}
+
+.startTime{
+    display: flex;
+    position: fixed;
+    top: 20%;
+    left: 50px;
+    width: 100px;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 10px 10px;
+    background-color:orange;
+    font-size: 16pt;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 3px 3px 3px darkorange;
+}

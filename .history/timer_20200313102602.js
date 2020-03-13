@@ -1,0 +1,16 @@
+    var timeOut;
+
+    function start(){
+        document.querySelector(".timer").style.visibility = 'visible';
+        document.querySelector(".innerTimer").style.display = 'block';
+        delay()
+    }
+
+    function delay(){
+        timeOut = setTimeout(stop(), 5000);
+    }
+
+    function stop(){
+        document.querySelector(".timer").style.visibility = 'hidden';
+        // document.querySelector(".innerTimer").style.display = 'block';
+    }
