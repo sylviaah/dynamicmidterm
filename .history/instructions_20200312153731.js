@@ -69,7 +69,6 @@ function instructionsToggle(){
         data.toggle_state = false;
     } else if (data.toggle_state === false){
         data.stepNum = 0;
-        change();
         document.querySelector(".instructions_overlay").style.display = "flex";
         data.toggle_state = true;
     }

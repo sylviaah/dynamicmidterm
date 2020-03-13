@@ -6,8 +6,8 @@ body,html {
 .open{
     display: flex;
     position: fixed;
-    bottom: 5%;
-    right: 5%;
+    top: 50%;
+    left: 45%;
     width: 100px;
     justify-content: center;
     border-radius: 10px;
@@ -15,7 +15,7 @@ body,html {
     background-color:orange;
     font-size: 16pt;
     font-family: Arial, Helvetica, sans-serif;
-    box-shadow: 3px 3px 3px darkorange;
+    box-shadow: 3px 3px 5px darkorange;
 }
 
 .instructions_overlay{
