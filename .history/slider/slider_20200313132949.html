@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <html>
+        <title>Slider</title>
+        <link rel="stylesheet" href="slider.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </html>
+    <body>
+        <div class="slider">
+            <div class="slider_progress">
+                <div class="progress 25"></div>
+                <div class="progress 50"></div>
+                <div class="progress 75"></div>
+                <div class="progress 100"></div>
+            </div>
+            <div class="slider_slider">
+                <i class="material-icons arrow_left" onclick="previous()">play_circle_filled</i>
+                <div class="image_div">
+                    <img class="slider_image img1" src="imgs/img1.jpg" alt="">
+                </div>
+                <div class="image_div">
+                    <img class="slider_image img2" src="imgs/img1.jpg" alt="">
+                </div>
+                <i class="material-icons arrow_right" onclick="next()">play_circle_filled</i>
+            </div>
+            <div class="slider_menu">
+                <div class="menu_start" onclick="start()">Start</div>
+                <div class="menu_intro">Intro</div>
+            </div>
+        </div>
+        <script src="slider.js"></script>
+    </body>
+</html>

@@ -1,0 +1,11 @@
+.menu_start, .menu_intro{
+    display: flex;
+    width: 100px;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 10px 10px;
+    background-color:deepskyblue;
+    font-size: 16pt;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 3px 3px 3px  deepskyblue;
+}

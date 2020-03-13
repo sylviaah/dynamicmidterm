@@ -1,0 +1,25 @@
+.slider{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    border-radius: 20px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.menu_start, .menu_intro{
+    display: flex;
+    width: 100px;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 10px 10px;
+    background-color:skyblue;
+    font-size: 16pt;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 3px 3px 3px  skyblue;
+}
