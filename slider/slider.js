@@ -46,7 +46,7 @@ var slider_data = {
     ]
 }
 
-function change(){
+function change_sli(){
     progressReset();
     document.querySelector(slider_data.scenes[slider_data.sceneNum].progress).style.backgroundColor = "skyblue";
     document.querySelector(".slider_image.img1").src = slider_data.scenes[slider_data.sceneNum].image1;
@@ -65,13 +65,13 @@ function progressReset(){
 function slider_next(){
     if(slider_data.sceneNum === slider_data.sceneNum){
         slider_data.sceneNum++;
-        change();
+        change_sli();
     }
 }
 
 function slider_previous(){
     if(slider_data.sceneNum === slider_data.sceneNum){
         slider_data.sceneNum--;
-        change();
+        change_sli();
     }
 }
