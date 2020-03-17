@@ -9,36 +9,116 @@ var slider_data = {
     scenes:[
         {         
             progress:".menu_start",
-            image1:"imgs/img1.jpg",
-            image2:"imgs/img1.jpg",
+            images:[
+                {
+                    image1:"imgs/img1.jpg",
+                    image2:"imgs/img1.jpg",
+                },
+                {
+                    image1:"imgs/img6.jpg",
+                    image2:"imgs/img6.jpg",
+                },
+                {
+                    image1:"imgs/img11.jpg",
+                    image2:"imgs/img11.jpg",
+                },
+                {
+                    image1:"imgs/img16.jpg",
+                    image2:"imgs/img16.jpg",
+                }
+            ],
             arrow_left:"hidden",
             arrow_right:"visible",
         },
         {
             progress:".progress25",
-            image1:"imgs/img2.jpg",
-            image2:"imgs/img2.jpg",
+            images:[
+                {
+                    image1:"imgs/img2.jpg",
+                    image2:"imgs/img2.jpg",
+                },
+                {
+                    image1:"imgs/img7.jpg",
+                    image2:"imgs/img7.jpg",
+                },
+                {
+                    image1:"imgs/img12.jpg",
+                    image2:"imgs/img12.jpg",
+                },
+                {
+                    image1:"imgs/img17.jpg",
+                    image2:"imgs/img17.jpg",
+                }
+            ],
             arrow_left:"visible",
             arrow_right:"visible",
         },
         {
             progress:".progress50",
-            image1:"imgs/img3.jpg",
-            image2:"imgs/img3.jpg",
+            images:[
+                {
+                    image1:"imgs/img3.jpg",
+                    image2:"imgs/img3.jpg",
+                },
+                {
+                    image1:"imgs/img8.jpg",
+                    image2:"imgs/img8.jpg",
+                },
+                {
+                    image1:"imgs/img13.jpg",
+                    image2:"imgs/img13.jpg",
+                },
+                {
+                    image1:"imgs/img18.jpg",
+                    image2:"imgs/img18.jpg",
+                }
+            ],
             arrow_left:"visible",
             arrow_right:"visible",
         },
         {
             progress:".progress75",
-            image1:"imgs/img4.jpg",
-            image2:"imgs/img4.jpg",
+            images:[
+                {
+                    image1:"imgs/img4.jpg",
+                    image2:"imgs/img4.jpg",
+                },
+                {
+                    image1:"imgs/img9.jpg",
+                    image2:"imgs/img9.jpg",
+                },
+                {
+                    image1:"imgs/img14.jpg",
+                    image2:"imgs/img14.jpg",
+                },
+                {
+                    image1:"imgs/img19.jpg",
+                    image2:"imgs/img19.jpg",
+                }
+            ],
             arrow_left:"visible",
             arrow_right:"visible",
         },
         {
             progress:".progress100",
-            image1:"imgs/img5.jpg",
-            image2:"imgs/img5.jpg",
+            images:[
+                {
+                    image1:"imgs/img5.jpg",
+                    image2:"imgs/img5.jpg",
+                },
+                {
+                    image1:"imgs/img10.jpg",
+                    image2:"imgs/img10.jpg",
+                },
+                {
+                    image1:"imgs/img15.jpg",
+                    image2:"imgs/img15.jpg",
+                },
+                {
+                    image1:"imgs/img20.jpg",
+                    image2:"imgs/img20.jpg",
+                }
+            ],
             arrow_left:"visible",
             arrow_right:"hidden",
         },
@@ -49,8 +129,8 @@ var slider_data = {
 function change_sli(){
     progressReset();
     document.querySelector(slider_data.scenes[slider_data.sceneNum].progress).style.backgroundColor = "skyblue";
-    document.querySelector(".slider_image.img1").src = slider_data.scenes[slider_data.sceneNum].image1;
-    document.querySelector(".slider_image.img2").src = slider_data.scenes[slider_data.sceneNum].image2;
+    document.querySelector(".slider_image.img1").src = slider_data.scenes[slider_data.sceneNum].images[quiz_data.questionNum].image1;
+    document.querySelector(".slider_image.img2").src = slider_data.scenes[slider_data.sceneNum].images[quiz_data.questionNum].image2;
     document.querySelector(".material-icons.slider_arrow_left").style.visibility = slider_data.scenes[slider_data.sceneNum].arrow_left;
     document.querySelector(".material-icons.slider_arrow_right").style.visibility = slider_data.scenes[slider_data.sceneNum].arrow_right;
     if(slider_data.sceneNum === 4){

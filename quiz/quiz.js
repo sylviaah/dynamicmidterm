@@ -1,7 +1,8 @@
 // questions
 var quiz_data = {
+    secondTry: false,
     questionNum:0,
-    scoreNum:0,
+    scoreNum:-1,
     questions:[
         {
             question: "Question 1: Who is making a good argument?",
@@ -46,8 +47,8 @@ var quiz_data = {
                     title: "That's Incorrect.",
                     score:0,
                     subtitle: "Try again!",
-                    exp: "Sister has not provided a reason that supports her conclusion. She is making a <strong>Begging the Question<strong/>fallacy"+
-                    "<br><strong>Begging the Question:</strong>The thing that you are trying to prove is already assumed to be true, so you are not actually adding anything to the argument.",
+                    exp: "Sister has not provided a reason that supports her conclusion. She is making a <strong>Begging the Question</strong>fallacy<br>"+
+                    "<br><strong>Begging the Question:</strong> The thing that you are trying to prove is already assumed to be true, so you are not actually adding anything to the argument.",
                     next: "Try Again"
                 },
                 {
@@ -73,7 +74,7 @@ var quiz_data = {
                     title: "That's Incorrect.",
                     score:0,
                     subtitle: "Try again!",
-                    exp: " Sister is trying to make her brother feel bad and give in to her. She is making an <strong>Appeal to Emotion<strong/>"+
+                    exp: " Sister is trying to make her brother feel bad and give in to her. She is making an <strong>Appeal to Emotion</strong><br>"+
                     "<br><strong>Appeal to Emotion:</strong>An appeal to emotion is not an argument! It's when you attempt to manipulate an emotional response instead of a valid or compelling argument.",
                     next: "Try Again"
                 },
@@ -124,6 +125,7 @@ function recall_question(){
 
 // answers
 function check_answer(answerNum){
+    timer_stop();
     document.querySelector(".answers_overlay").style.display = "flex";
     document.querySelector(".answers_title").innerHTML = quiz_data.questions[quiz_data.questionNum].answers[answerNum].title;
     document.querySelector(".answers_subtitle").innerHTML = quiz_data.questions[quiz_data.questionNum].answers[answerNum].subtitle;
@@ -131,19 +133,31 @@ function check_answer(answerNum){
     document.querySelector(".buttons_next").innerHTML = quiz_data.questions[quiz_data.questionNum].answers[answerNum].next;
 
     if(quiz_data.questions[quiz_data.questionNum].answers[answerNum].score === 1){
-        quiz_data.scoreNum++;
-        document.querySelector(".material-icons.score"+(quiz_data.questionNum+1)).style.color = "darkorange";
-        document.querySelector(".buttons_next").style.display = "flex";
-        document.querySelector(".buttons_again").style.display = "none";
+        if(quiz_data.secondTry === true){
+            document.querySelector(".buttons_next").style.display = "flex";
+            document.querySelector(".buttons_again").style.display = "none";
+            document.querySelector(".answers_subtitle").innerHTML = "Nice job!";
+        } else if(quiz_data.secondTry === false){
+            quiz_data.scoreNum++;
+            document.querySelector(".material-icons.score"+(quiz_data.scoreNum+1)).style.color = "darkorange";
+            document.querySelector(".buttons_next").style.display = "flex";
+            document.querySelector(".buttons_again").style.display = "none";
+        }
     } else if(quiz_data.questions[quiz_data.questionNum].answers[answerNum].score === 0){
         document.querySelector(".buttons_next").style.display = "none";
         document.querySelector(".buttons_again").style.display = "flex";
-    }
+        quiz_data.secondTry = true;
+    } 
 }
 
 function next_story(){
     document.querySelector(".answers_overlay").style.display = "none";
+    document.querySelector(".questions").style.display = "none";
     quiz_data.questionNum++;
+    quiz_data.secondTry = false;
+    progressReset();
+    slider_data.sceneNum = 0;
+    change_sli();
 }
 
 function answers_close(){
