@@ -1,5 +1,7 @@
 .timer {
     position: fixed;
+    bottom: 15%;
+    left: 7%;
     margin: 50px;
     visibility: hidden;
     width: 100px; 

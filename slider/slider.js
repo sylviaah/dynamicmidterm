@@ -53,6 +53,10 @@ function change_sli(){
     document.querySelector(".slider_image.img2").src = slider_data.scenes[slider_data.sceneNum].image2;
     document.querySelector(".material-icons.slider_arrow_left").style.visibility = slider_data.scenes[slider_data.sceneNum].arrow_left;
     document.querySelector(".material-icons.slider_arrow_right").style.visibility = slider_data.scenes[slider_data.sceneNum].arrow_right;
+    if(slider_data.sceneNum === 4){
+        recall_question();
+        timer_start();
+    }
 }
 
 function progressReset(){
@@ -73,5 +77,7 @@ function slider_previous(){
     if(slider_data.sceneNum === slider_data.sceneNum){
         slider_data.sceneNum--;
         change_sli();
+        document.querySelector(".questions").style.display = "none";
+        timer_stop();
     }
 }

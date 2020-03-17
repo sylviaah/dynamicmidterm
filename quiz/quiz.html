@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Questions</title>
+        <title>Quiz</title>
         <link rel="stylesheet" href="questions.css">
         <link rel="stylesheet" href="answers.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -14,16 +14,36 @@
                 <div class="question">Who is making a good argument?</div>
                 <br>
                 <div class="options">
-                    <div class="option 1">A. Brother</div>
-                    <div class="option 2">B. Sister</div>
-                    <div class="option 3">C. Neither</div>
+                    <div class="option 1" onclick="check_answer(0)">A. Brother</div>
+                    <div class="option 2" onclick="check_answer(1)">B. Sister</div>
+                    <div class="option 3" onclick="check_answer(2)">C. Neither</div>
                 </div>
             </div>
         </div>
         <!-- Questions End -->
 
         <!-- Answers Start -->
+        <div class="answers_overlay">
+            <div class="answers_modal">
+                <i class="material-icons close" onclick="answers_close()">cancel</i>
+                <h1 class="answers_title">That's Correct!</h1>
+                <div class="answers_score">
+                    <i class="material-icons score1">star</i>
+                    <i class="material-icons score2">star</i>
+                    <i class="material-icons score3">star</i>
+                    <i class="material-icons score4">star</i>
+                </div>
+                <h2 class="answers_subtitle"></h2>
+                <p class="answers_exp"></p>
+                <div class="answers_buttons">
+                    <div onclick="answers_close()">Exit</div>
+                    <div class="buttons_again" onclick="answers_close()">Try Again</div>
+                    <div class="buttons_next" onclick="next_story()">Next Story!</div>
+                </div>
+                
 
+            </div>
+        </div>
         <!-- Answers End -->
         <script src="quiz.js"></script>
     </body>
