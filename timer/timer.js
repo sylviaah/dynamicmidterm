@@ -9,5 +9,10 @@
     function timer_stop(){
         document.querySelector(".timer").style.visibility = 'hidden';
         document.querySelector(".innerTimer").style.display = 'none';
+        clearTimeout(timeOut);
+        
+    }
+
+    function out_of_time(){
         timeOut = setTimeout(function(){alert("Out of time!"); }, 1);
     }

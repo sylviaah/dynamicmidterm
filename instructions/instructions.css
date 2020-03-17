@@ -18,6 +18,12 @@
     box-shadow: 3px 3px 3px darkorange;
 }
 
+.open:hover{
+    cursor: pointer;
+    background-color: white;
+    box-shadow: 3px 3px 3px rgb(0, 0, 0, 0.15);
+}
+
 .instructions_overlay{
     display: none;
     position: fixed;
