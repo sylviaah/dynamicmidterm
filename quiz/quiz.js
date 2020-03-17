@@ -158,6 +158,7 @@ function next_story(){
     progressReset();
     slider_data.sceneNum = 0;
     change_sli();
+    change_header()
 }
 
 function answers_close(){
