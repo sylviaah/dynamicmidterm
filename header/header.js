@@ -8,5 +8,5 @@ var header_data = {
 }
 
 function change_header(){
-    document.querySelector(".header_title").innerHTML = header_data.header_title[slider_data.sceneNum];
+    document.querySelector(".header_title").innerHTML = header_data.header_title[quiz_data.questionNum];
 }

@@ -158,9 +158,10 @@ function next_story(){
     progressReset();
     slider_data.sceneNum = 0;
     change_sli();
-    change_header()
+    change_header();
 }
 
 function answers_close(){
     document.querySelector(".answers_overlay").style.display = "none";
+    timer_start();
 }

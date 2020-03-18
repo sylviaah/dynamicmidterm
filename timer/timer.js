@@ -3,7 +3,7 @@
     function timer_start(){
         document.querySelector(".timer").style.visibility = 'visible';
         document.querySelector(".innerTimer").style.display = 'block';
-        timeOut = setTimeout(function(){timer_stop(); }, 10000);
+        timeOut = setTimeout(function(){timer_stop(); out_of_time(); }, 10000);
     }
 
     function timer_stop(){
@@ -14,5 +14,6 @@
     }
 
     function out_of_time(){
-        timeOut = setTimeout(function(){alert("Out of time!"); }, 1);
+        timeOut = setTimeout(function(){check_answer(); }, 1);
+        document.querySelector(".answers_title").innerHTML = "Out of Time!";
     }
