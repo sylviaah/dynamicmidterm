@@ -3,22 +3,74 @@
     <head>
         <title>Kid's Court</title>
         <link rel="stylesheet" href="app.css">
-        <!-- timer -->
+        <link rel="stylesheet" href="header/header.css">
+        <link rel="stylesheet" href="menu/menu.css">
+        <link rel="stylesheet" href="popup/popup.css">
+        <link rel="stylesheet" href="popup/intro.css">
         <link rel="stylesheet" href="timer/timer.css">
-        <!-- slider -->
         <link rel="stylesheet" href="slider/slider.css">
-        <!-- questions -->
         <link rel="stylesheet" href="quiz/questions.css">
-        <!-- answers -->
         <link rel="stylesheet" href="quiz/answers.css">
-        <!-- instructions -->
         <link rel="stylesheet" href="instructions/instructions.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
 
     <body>
         <div class="background"></div>
-
+        <!-- header start -->
+        <div class="header_div">
+            <h1 class="header_title">Kid's Court</h1>
+            <i class="material-icons menu" onclick="menuToggle()">menu</i>
+        </div>
+        <!-- header end -->
+        <!-- menu -->
+        <div class="menu_div">
+            <div class="menu_story one" onclick="newStory(0)">Story 1</div>
+            <div class="menu_story two" onclick="newStory(1)">Story 2</div>
+            <div class="menu_story three" onclick="newStory(2)">Story 3</div>
+            <div class="menu_story four" onclick="newStory(3)">Story 4</div>
+            <div class="menu_intro" onclick="change_intro()">Intro</div>
+        </div>
+        <!-- menu -->
+        <!-- popup start -->
+        <div class="popup_overlay">
+            <div class="popup_modal">
+                <h1 class="popup_title">Welcome to Kid's Court!</h1>
+                <div class="image_div">
+                    <img class="popup_image" src="imgs/img1.jpg" alt="">
+                </div>
+                <div>
+                    <h2 class="popup_text subtitle">Subtitle</h2>
+                    <p class="popup_text body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, exercitationem similique harum pariatur soluta eum vero repudiandae recusandae iste architecto ullam numquam quae ducimus labore quod voluptatem quidem libero saepe.</p>        
+                </div>
+                <div class="popup_buttons">
+                    <div class="popup_buttons back" onclick="back_popup()">Back</div>
+                    <div class="popup_buttons next" onclick="next_popup()">Next</div>
+                    <div class="popup_buttons start" onclick="end_popup()">Let's Go!</div>
+                </div>
+            </div>
+        </div>
+        <!-- popup end -->
+        <!-- intro start -->
+        <div class="intro_overlay">
+            <div class="intro_modal">
+                <i class="material-icons close" onclick="end_intro()">cancel</i>
+                <h1 class="intro_title">Welcome to Kid's Court!</h1>
+                <div class="image_div">
+                    <img class="intro_image" src="imgs/img1.jpg" alt="">
+                </div>
+                <div>
+                    <h2 class="intro_text subtitle">Subtitle</h2>
+                    <p class="intro_text body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, exercitationem similique harum pariatur soluta eum vero repudiandae recusandae iste architecto ullam numquam quae ducimus labore quod voluptatem quidem libero saepe.</p>        
+                </div>
+                <div class="intro_buttons">
+                    <div class="intro_buttons back" onclick="back_intro()">Back</div>
+                    <div class="intro_buttons next" onclick="next_intro()">Next</div>
+                    <div class="intro_buttons start" onclick="end_intro()">Let's Go!</div>
+                </div>
+            </div>
+        </div>
+        <!-- intro end -->
         <!-- Timer Start -->
         <div class="timer"><div class="innerTimer"></div></div>
         <!-- <div class="startTime" onclick="timer_start()">Start Time</div> -->
@@ -43,8 +95,8 @@
                 <i class="material-icons slider_arrow_right" onclick="slider_next()">play_circle_filled</i>
             </div>
             <div class="slider_menu">
-                <div class="menu_start" onclick="slider_start()">Start</div>
-                <div class="menu_intro">Intro</div>
+                <div class="menu_start" onclick="change_popup(),slider_start()">Start</div>
+                <div class="menu_intro" onclick="change_intro()">Intro</div>
             </div>
         </div>
         <!-- Slider End -->
@@ -106,8 +158,12 @@
             </div>
         </div>
         <!-- Instructions end -->
-        <script src="app.js"></script>
 
+        <script src="app.js"></script>
+        <script src="header/header.js"></script>
+        <script src="menu/menu.js"></script>
+        <script src="popup/popup.js"></script>
+        <script src="popup/intro.js"></script>
         <script src="timer/timer.js"></script>
         <script src="slider/slider.js"></script>
         <script src="quiz/quiz.js"></script>
