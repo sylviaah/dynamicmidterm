@@ -1,7 +1,8 @@
 function slider_start(){
-    document.querySelector(".slider_progress").style.display = "flex";
-    document.querySelector(".slider_slider").style.display = "flex";
-    document.querySelector(".slider_menu").style.display = "none";
+    // document.querySelector(".slider_progress").style.display = "flex";
+    // document.querySelector(".slider_slider").style.display = "flex";
+    // document.querySelector(".slider_menu").style.display = "none";
+    document.querySelector(".slider").style.display = "none";
     change_header();
 }
 

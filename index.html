@@ -4,6 +4,7 @@
         <title>Kid's Court</title>
         <link rel="stylesheet" href="app.css">
         <link rel="stylesheet" href="header/header.css">
+        <link rel="stylesheet" href="menu/menu.css">
         <link rel="stylesheet" href="popup/popup.css">
         <link rel="stylesheet" href="popup/intro.css">
         <link rel="stylesheet" href="timer/timer.css">
@@ -19,9 +20,18 @@
         <!-- header start -->
         <div class="header_div">
             <h1 class="header_title">Kid's Court</h1>
-            <i class="material-icons menu">menu</i>
+            <i class="material-icons menu" onclick="menuToggle()">menu</i>
         </div>
         <!-- header end -->
+        <!-- menu -->
+        <div class="menu_div">
+            <div class="menu_story one" onclick="newStory(0)">Story 1</div>
+            <div class="menu_story two" onclick="newStory(1)">Story 2</div>
+            <div class="menu_story three" onclick="newStory(2)">Story 3</div>
+            <div class="menu_story four" onclick="newStory(3)">Story 4</div>
+            <div class="menu_intro" onclick="change_intro()">Intro</div>
+        </div>
+        <!-- menu -->
         <!-- popup start -->
         <div class="popup_overlay">
             <div class="popup_modal">
@@ -85,7 +95,7 @@
                 <i class="material-icons slider_arrow_right" onclick="slider_next()">play_circle_filled</i>
             </div>
             <div class="slider_menu">
-                <div class="menu_start" onclick="change_popup(),slider_start()" onclick="slider_start()">Start</div>
+                <div class="menu_start" onclick="change_popup(),slider_start()">Start</div>
                 <div class="menu_intro" onclick="change_intro()">Intro</div>
             </div>
         </div>
@@ -151,6 +161,7 @@
 
         <script src="app.js"></script>
         <script src="header/header.js"></script>
+        <script src="menu/menu.js"></script>
         <script src="popup/popup.js"></script>
         <script src="popup/intro.js"></script>
         <script src="timer/timer.js"></script>

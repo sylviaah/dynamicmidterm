@@ -157,8 +157,9 @@ function next_story(){
     quiz_data.secondTry = false;
     progressReset();
     slider_data.sceneNum = 0;
-    change_sli();
-    change_header();
+    end_popup();
+    add_menu();
+    menuToggle();
 }
 
 function answers_close(){

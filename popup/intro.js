@@ -51,4 +51,5 @@ function back_intro(){
 
 function end_intro(){
     document.querySelector(".intro_overlay").style.display = "none";
+    intro_data.introNum = 0;
 }
