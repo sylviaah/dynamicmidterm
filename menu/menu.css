@@ -17,6 +17,12 @@
     font-size: 18pt;
     font-family: Arial, Helvetica, sans-serif;
     box-shadow: 3px 3px 3px rgb(0, 0, 0, 0.15);
+    transition: background-color 0.3s;
+}
+
+.menu_resume:hover, .menu_start:hover, .menu_story:hover, .menu_intro:hover{
+    cursor: pointer;
+    background-color: deepskyblue;
 }
 
 .menu_story.one{

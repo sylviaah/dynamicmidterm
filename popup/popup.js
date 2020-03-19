@@ -2,9 +2,9 @@ var popup_data = {
     popupNum: 0,
     def:[
         {
-            title:"What's that?",
+            title:"What's an Argument?",
             image:"imgs/img4.jpg",
-            subtitle:"What is an Argument?",
+            subtitle:"Argument:",
             text:"A good argument must always have the following:<br>"+
             "1. A Reason for the argument<br>"+
             "2. A conclusion to the argument",
@@ -98,6 +98,11 @@ function change_popup(){
     document.querySelector(".popup_buttons.back").style.display = popup_data.def[popup_data.popupNum].back;
     document.querySelector(".popup_buttons.next").style.display = popup_data.def[popup_data.popupNum].next;
     document.querySelector(".popup_buttons.start").style.display = popup_data.def[popup_data.popupNum].start;
+}
+
+function exit_popup(){
+    document.querySelector(".popup_overlay").style.display = "none";
+    change_popup();
 }
 
 function next_popup(){
