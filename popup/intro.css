@@ -76,12 +76,8 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.intro_buttons.start{
-    display: flex;
-}
-
-.intro_buttons.start{
-    display: flex;
+.intro_buttons.back{
+    display: none;
 }
 
 .intro_buttons.start{

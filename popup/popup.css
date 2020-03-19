@@ -68,12 +68,8 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.popup_buttons.start{
-    display: flex;
-}
-
-.popup_buttons.start{
-    display: flex;
+.popup_buttons.back{
+    display: none;
 }
 
 .popup_buttons.start{

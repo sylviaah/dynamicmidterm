@@ -1,7 +1,12 @@
+function slider_show(){
+    document.querySelector(".slider").style.display = "flex";
+    change_header();
+}
+
 function slider_start(){
-    // document.querySelector(".slider_progress").style.display = "flex";
-    // document.querySelector(".slider_slider").style.display = "flex";
-    // document.querySelector(".slider_menu").style.display = "none";
+    document.querySelector(".slider_progress").style.display = "flex";
+    document.querySelector(".slider_slider").style.display = "flex";
+    document.querySelector(".slider_menu").style.display = "none";
     document.querySelector(".slider").style.display = "none";
     change_header();
 }
@@ -10,11 +15,11 @@ var slider_data = {
     sceneNum:0,
     scenes:[
         {         
-            progress:".menu_start",
+            progress:".progress25",
             images:[
                 {
                     image1:"imgs/img1.jpg",
-                    image2:"imgs/img1.jpg",
+                    image2:"imgs/img2.jpg",
                 },
                 {
                     image1:"imgs/img6.jpg",
@@ -33,11 +38,11 @@ var slider_data = {
             arrow_right:"visible",
         },
         {
-            progress:".progress25",
+            progress:".progress50",
             images:[
                 {
-                    image1:"imgs/img2.jpg",
-                    image2:"imgs/img2.jpg",
+                    image1:"imgs/img3.jpg",
+                    image2:"imgs/img4.jpg",
                 },
                 {
                     image1:"imgs/img7.jpg",
@@ -56,11 +61,11 @@ var slider_data = {
             arrow_right:"visible",
         },
         {
-            progress:".progress50",
+            progress:".progress75",
             images:[
                 {
-                    image1:"imgs/img3.jpg",
-                    image2:"imgs/img3.jpg",
+                    image1:"imgs/img5.jpg",
+                    image2:"imgs/img6.jpg",
                 },
                 {
                     image1:"imgs/img8.jpg",
@@ -79,11 +84,11 @@ var slider_data = {
             arrow_right:"visible",
         },
         {
-            progress:".progress75",
+            progress:".progress100",
             images:[
                 {
                     image1:"imgs/img4.jpg",
-                    image2:"imgs/img4.jpg",
+                    image2:"imgs/img6.jpg",
                 },
                 {
                     image1:"imgs/img9.jpg",
@@ -98,8 +103,8 @@ var slider_data = {
                     image2:"imgs/img19.jpg",
                 }
             ],
-            arrow_left:"visible",
-            arrow_right:"visible",
+            arrow_left:"hidden",
+            arrow_right:"hidden",
         },
         {
             progress:".progress100",
@@ -135,7 +140,7 @@ function change_sli(){
     document.querySelector(".slider_image.img2").src = slider_data.scenes[slider_data.sceneNum].images[quiz_data.questionNum].image2;
     document.querySelector(".material-icons.slider_arrow_left").style.visibility = slider_data.scenes[slider_data.sceneNum].arrow_left;
     document.querySelector(".material-icons.slider_arrow_right").style.visibility = slider_data.scenes[slider_data.sceneNum].arrow_right;
-    if(slider_data.sceneNum === 4){
+    if(slider_data.sceneNum === 3){
         recall_question();
         timer_start();
     }
