@@ -29,7 +29,14 @@ var quiz_data = {
                     subtitle: "Try again!",
                     exp: "Somone has provided reasons for their conclusion.",
                     next: "Try Again"
-                }
+                },
+                {
+                    title:"Out of Time",
+                    score:0,
+                    subtitle:"Sorry.",
+                    exp:"No star, but go ahead and give it another shot. You got this!",
+                    next:"Try Again"
+                },
             ]
         },
         {
@@ -57,7 +64,14 @@ var quiz_data = {
                     subtitle: "You earned a star! Nice job!",
                     exp: "Neither of them have provided a reason that supports their conclusion.",
                     next: "Next Story!"
-                }
+                },
+                {
+                    title:"Out of Time",
+                    score:0,
+                    subtitle:"Sorry.",
+                    exp:"No star, but go ahead and give it another shot. You got this!",
+                    next:"Try Again"
+                },
             ]
         },
         {
@@ -85,6 +99,13 @@ var quiz_data = {
                     exp: "Somone has provided reasons for their conclusion.",
                     next: "Try Again"
                 },
+                {
+                    title:"Out of Time",
+                    score:0,
+                    subtitle:"Sorry.",
+                    exp:"No star, but go ahead and give it another shot. You got this!",
+                    next:"Try Again"
+                },
             ]
         },
         {
@@ -111,10 +132,26 @@ var quiz_data = {
                     subtitle: "Try again!",
                     exp: "Somone has provided reasons for their conclusion.",
                     next: "Try Again"
-                }
+                },
+                {
+                    title:"Out of Time",
+                    score:0,
+                    subtitle:"Sorry.",
+                    exp:"No star, but go ahead and give it another shot. You got this!",
+                    next:"Try Again"
+                },
             ]
         },
-    ]
+    ],
+    time_out:[
+        {
+            title:"Out of Time",
+            score:0,
+            subtitle:"Sorry.",
+            exp:"No star, but go ahead and give it another shot. You got this!",
+            next:"Try Again"
+        },
+    ],
 }
 
 function recall_question(){
@@ -160,6 +197,7 @@ function next_story(){
     end_popup();
     add_menu();
     menuToggle();
+    document.querySelector(".menu_resume").style.display = "none";
 }
 
 function answers_close(){

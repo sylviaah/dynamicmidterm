@@ -18,7 +18,7 @@ var instructions_data = {
         },
         {
             image:"imgs/img3.jpg",
-            text:"3. Answer the question correctly to earn a star! Collect a star for each story and earn up to 5 stars!",
+            text:"3. Answer the question correctly to earn a star! Collect a star for each story and earn up to 4 stars!",
             arrow_left:"visible",
             arrow_right:"visible",
             ok_button:"hidden"
