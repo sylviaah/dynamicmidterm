@@ -25,9 +25,6 @@ function menuToggle(){
     } else if(menu_data.menu_toggle === true){
         document.querySelector(".menu_div").style.display = "none";
         document.querySelector(".slider").style.display = "flex";
-        slider_start();
-        change_sli();
-        // change_popup();
         menu_data.menu_toggle = false;
     }
 }
@@ -53,14 +50,14 @@ function newStory(num){
         popup_data.popupNum = 7;
     }
     change_popup();
-    slider_show();
     change_sli();
     menuToggle();
-    // timer_stop();
+    document.querySelector(".slider").style.display = "none";
 }
 
 function resume(){
     slider_show();
     change_sli();
     menuToggle();
+    document.querySelector(".slider").style.display = "flex";
 }

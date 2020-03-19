@@ -57,6 +57,15 @@ body,html {
     font-size: 80px; 
 }
 
+.material-icons{
+    transition:color 0.3s;
+}
+
+.material-icons:hover{
+    cursor: pointer;
+    color: white;
+}
+
 .slider_image_div{
     width: 400px;
     height: 400px;
