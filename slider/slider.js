@@ -18,20 +18,20 @@ var slider_data = {
             progress:".progress25",
             images:[
                 {
-                    image1:"imgs/img1.jpg",
-                    image2:"imgs/img2.jpg",
+                    image1:"imgs/img1.1.jpg",
+                    image2:"imgs/img1.2.jpg",
                 },
                 {
-                    image1:"imgs/img6.jpg",
-                    image2:"imgs/img6.jpg",
+                    image1:"imgs/img2.1.jpg",
+                    image2:"imgs/img2.2.jpg",
                 },
                 {
-                    image1:"imgs/img11.jpg",
-                    image2:"imgs/img11.jpg",
+                    image1:"imgs/img3.1.jpg",
+                    image2:"imgs/img3.2.jpg",
                 },
                 {
-                    image1:"imgs/img16.jpg",
-                    image2:"imgs/img16.jpg",
+                    image1:"imgs/img4.1.jpg",
+                    image2:"imgs/img4.2.jpg",
                 }
             ],
             arrow_left:"hidden",
@@ -41,20 +41,20 @@ var slider_data = {
             progress:".progress50",
             images:[
                 {
-                    image1:"imgs/img3.jpg",
-                    image2:"imgs/img4.jpg",
+                    image1:"imgs/img1.3.jpg",
+                    image2:"imgs/img1.4.jpg",
                 },
                 {
-                    image1:"imgs/img7.jpg",
-                    image2:"imgs/img7.jpg",
+                    image1:"imgs/img2.3.jpg",
+                    image2:"imgs/img2.4.jpg",
                 },
                 {
-                    image1:"imgs/img12.jpg",
-                    image2:"imgs/img12.jpg",
+                    image1:"imgs/img3.3.jpg",
+                    image2:"imgs/img3.4.jpg",
                 },
                 {
-                    image1:"imgs/img17.jpg",
-                    image2:"imgs/img17.jpg",
+                    image1:"imgs/img4.3.jpg",
+                    image2:"imgs/img4.4.jpg",
                 }
             ],
             arrow_left:"visible",
@@ -64,20 +64,20 @@ var slider_data = {
             progress:".progress75",
             images:[
                 {
-                    image1:"imgs/img5.jpg",
-                    image2:"imgs/img6.jpg",
+                    image1:"imgs/img1.5.jpg",
+                    image2:"imgs/img1.6.jpg",
                 },
                 {
-                    image1:"imgs/img8.jpg",
-                    image2:"imgs/img8.jpg",
+                    image1:"imgs/img2.5.jpg",
+                    image2:"imgs/img2.6.jpg",
                 },
                 {
-                    image1:"imgs/img13.jpg",
-                    image2:"imgs/img13.jpg",
+                    image1:"imgs/img3.5.jpg",
+                    image2:"imgs/img3.6.jpg",
                 },
                 {
-                    image1:"imgs/img18.jpg",
-                    image2:"imgs/img18.jpg",
+                    image1:"imgs/img4.5.jpg",
+                    image2:"imgs/img4.6.jpg",
                 }
             ],
             arrow_left:"visible",
@@ -87,49 +87,25 @@ var slider_data = {
             progress:".progress100",
             images:[
                 {
-                    image1:"imgs/img4.jpg",
-                    image2:"imgs/img6.jpg",
+                    image1:"imgs/img1.5.jpg",
+                    image2:"imgs/img1.6.jpg",
                 },
                 {
-                    image1:"imgs/img9.jpg",
-                    image2:"imgs/img9.jpg",
+                    image1:"imgs/img2.4.jpg",
+                    image2:"imgs/img2.6.jpg",
                 },
                 {
-                    image1:"imgs/img14.jpg",
-                    image2:"imgs/img14.jpg",
+                    image1:"imgs/img3.4.jpg",
+                    image2:"imgs/img3.6.jpg",
                 },
                 {
-                    image1:"imgs/img19.jpg",
-                    image2:"imgs/img19.jpg",
+                    image1:"imgs/img4.2.jpg",
+                    image2:"imgs/img4.4.jpg",
                 }
             ],
             arrow_left:"hidden",
             arrow_right:"hidden",
         },
-        {
-            progress:".progress100",
-            images:[
-                {
-                    image1:"imgs/img5.jpg",
-                    image2:"imgs/img5.jpg",
-                },
-                {
-                    image1:"imgs/img10.jpg",
-                    image2:"imgs/img10.jpg",
-                },
-                {
-                    image1:"imgs/img15.jpg",
-                    image2:"imgs/img15.jpg",
-                },
-                {
-                    image1:"imgs/img20.jpg",
-                    image2:"imgs/img20.jpg",
-                }
-            ],
-            arrow_left:"hidden",
-            arrow_right:"hidden",
-        },
-        
     ]
 }
 

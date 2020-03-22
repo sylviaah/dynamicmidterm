@@ -2,27 +2,70 @@ var intro_data = {
     introNum:0,
     intro:[
         {
-            title:"Welcome to Kid's Court!",
-            image:"imgs/img1.jpg",
-            text:"intro text",
+            image:"imgs/img0.1.jpg",
             exit:"flex",
             back:"none",
             next:"flex",
             start:"none"
         },
         {
-            title:"Welcome slide 2",
-            image:"imgs/img2.jpg",
-            text:"intro text 2",
+            image:"imgs/img0.2.jpg",
             exit:"none",
             back:"flex",
             next:"flex",
             start:"none"
         },
         {
-            title:"Welcome slide 3",
-            image:"imgs/img3.jpg",
-            text:"intro text 3",
+            image:"imgs/img0.3.jpg",
+            exit:"none",
+            back:"flex",
+            next:"flex",
+            start:"none"
+        },
+        {
+            image:"imgs/img0.4.jpg",
+            exit:"none",
+            back:"flex",
+            next:"flex",
+            start:"none"
+        },
+        {
+            image:"imgs/img0.5.jpg",
+            exit:"none",
+            back:"flex",
+            next:"flex",
+            start:"none"
+        },
+        {
+            image:"imgs/img0.6.jpg",
+            exit:"none",
+            back:"flex",
+            next:"flex",
+            start:"none"
+        },
+        {
+            image:"imgs/img0.7.jpg",
+            exit:"none",
+            back:"flex",
+            next:"flex",
+            start:"none"
+        },
+        {
+            image:"imgs/img0.8.jpg",
+            exit:"none",
+            back:"flex",
+            next:"flex",
+            start:"none"
+        },
+        {
+            image:"imgs/img0.9.jpg",
+            exit:"none",
+            back:"flex",
+            next:"flex",
+            start:"none"
+        },
+        {
+            image:"imgs/img0.10.jpg",
             exit:"none",
             back:"flex",
             next:"none",
@@ -33,10 +76,7 @@ var intro_data = {
 
 function change_intro(){
     document.querySelector(".intro_overlay").style.display = "flex";
-    document.querySelector(".intro_title").innerHTML = intro_data.intro[intro_data.introNum].title;
     document.querySelector(".intro_image").src = intro_data.intro[intro_data.introNum].image;
-    document.querySelector(".intro_text.subtitle").innerHTML = intro_data.intro[intro_data.introNum].subtitle;
-    document.querySelector(".intro_text.body").innerHTML = intro_data.intro[intro_data.introNum].text;
     document.querySelector(".intro_buttons.exit").style.display = intro_data.intro[intro_data.introNum].exit;
     document.querySelector(".intro_buttons.back").style.display = intro_data.intro[intro_data.introNum].back;
     document.querySelector(".intro_buttons.next").style.display = intro_data.intro[intro_data.introNum].next;
@@ -44,8 +84,8 @@ function change_intro(){
 }
 
 function exit_intro(){
-    document.querySelector(".intro_overlay").style.display = "none";
     change_intro();
+    document.querySelector(".intro_overlay").style.display = "none";
 }
 
 function next_intro(){

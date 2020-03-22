@@ -101,8 +101,9 @@ function change_popup(){
 }
 
 function exit_popup(){
-    document.querySelector(".popup_overlay").style.display = "none";
     change_popup();
+    document.querySelector(".popup_overlay").style.display = "none";
+    menuToggle();
 }
 
 function next_popup(){

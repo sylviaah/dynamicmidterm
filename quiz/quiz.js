@@ -124,7 +124,7 @@ var quiz_data = {
                     score:1,
                     subtitle: "You earned a star! Nice job!",
                     exp: "Sister has provided reasons for her conclusion.",
-                    next: "Next Story!"
+                    next: "Next"
                 },
                 {
                     title: "That's Incorrect.",
@@ -140,6 +140,20 @@ var quiz_data = {
                     exp:"No star, but go ahead and give it another shot. You got this!",
                     next:"Try Again"
                 },
+                // {
+                //     title:"Sorry!",
+                //     score:0,
+                //     subtitle:"You only earned"+scoreNum+1+"stars.",
+                //     exp:"Restart and try again.",
+                //     next:"Try Again"
+                // },
+                // {
+                //     title:"You Won!",
+                //     score:0,
+                //     subtitle:"You earned all 4 stars!",
+                //     exp:"Now you're an argument expert.",
+                //     next:"Home"
+                // },
             ]
         },
     ],
@@ -188,19 +202,62 @@ function check_answer(answerNum){
 }
 
 function next_story(){
-    document.querySelector(".answers_overlay").style.display = "none";
-    document.querySelector(".questions").style.display = "none";
-    quiz_data.questionNum++;
-    quiz_data.secondTry = false;
-    progressReset();
-    slider_data.sceneNum = 0;
-    end_popup();
-    add_menu();
-    menuToggle();
-    document.querySelector(".menu_resume").style.display = "none";
+    if(quiz_data.questionNum === 3){
+        if(quiz_data.scoreNum < 3){
+            document.querySelector(".answers_overlay").style.display = "flex";
+            document.querySelector(".answers_title").innerHTML = "Sorry!";
+            document.querySelector(".answers_subtitle").innerHTML = "You only earned "+(parseInt(quiz_data.scoreNum)+1)+" stars.";
+            document.querySelector(".answers_exp").innerHTML = "Restart and try again.";
+            document.querySelector(".buttons_next").style.display = "none";
+            document.querySelector(".buttons_restart").style.display = "flex";
+            document.querySelector(".answers_image_div").style.display = "flex";
+        }else if(quiz_data.scoreNum === 3){
+            document.querySelector(".answers_overlay").style.display = "flex";
+            document.querySelector(".answers_title").innerHTML = "You Won";
+            document.querySelector(".answers_subtitle").innerHTML = "You won all 4 stars";
+            document.querySelector(".answers_exp").innerHTML = "Now you're an argument expert!";
+            document.querySelector(".buttons_next").style.display = "none";
+            document.querySelector(".buttons_restart").style.display = "flex";
+            document.querySelector(".buttons_restart").innerHTML = "Home";
+            document.querySelector(".answers_image_div").style.display = "flex";
+            document.querySelector(".answers_image").src = "imgs/img0.13.jpg";
+        } 
+    } if (quiz_data.questionNum != 3){
+        document.querySelector(".answers_overlay").style.display = "none";
+        document.querySelector(".questions").style.display = "none";
+        quiz_data.questionNum++;
+        quiz_data.secondTry = false;
+        progressReset();
+        slider_data.sceneNum = 0;
+        end_popup();
+        add_menu();
+        menuToggle();
+        document.querySelector(".menu_resume").style.display = "none";
+        }
+    
 }
 
 function answers_close(){
     document.querySelector(".answers_overlay").style.display = "none";
     timer_start();
+}
+
+function restart(){
+    if(quiz_data.scoreNum < 3){
+        location.reload();
+    } else {
+        document.querySelector(".answers_overlay").style.display = "none";
+        document.querySelector(".questions").style.display = "none";
+        document.querySelector(".slider").style.display = "none";
+        document.querySelector(".buttons_restart").style.display = "none";
+        document.querySelector(".buttons_next").style.display = "flex";
+        quiz_data.questionNum = 0;
+        quiz_data.secondTry = false;
+        quiz_data.scoreNum = -1;
+        progressReset();
+        slider_data.sceneNum = 0;
+        end_popup();
+        menuToggle();
+        document.querySelector(".menu_resume").style.display = "none";   
+    }
 }
