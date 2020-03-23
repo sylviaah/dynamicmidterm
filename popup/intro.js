@@ -68,6 +68,41 @@ var intro_data = {
             image:"imgs/img0.10.jpg",
             exit:"none",
             back:"flex",
+            next:"flex",
+            start:"none"
+        },
+        {
+            image:"imgs/img0.11.jpg",
+            exit:"none",
+            back:"flex",
+            next:"flex",
+            start:"none"
+        },
+        {
+            image:"imgs/img0.12.jpg",
+            exit:"none",
+            back:"flex",
+            next:"flex",
+            start:"none"
+        },
+        {
+            image:"imgs/img0.13.jpg",
+            exit:"none",
+            back:"flex",
+            next:"flex",
+            start:"none"
+        },
+        {
+            image:"imgs/img0.14.jpg",
+            exit:"none",
+            back:"flex",
+            next:"flex",
+            start:"none"
+        },
+        {
+            image:"imgs/img0.15.jpg",
+            exit:"none",
+            back:"flex",
             next:"none",
             start:"flex"
         }
