@@ -13,7 +13,7 @@ body{
 }
 .answers_modal{
     width: 50%;
-    height: 70%;
+    height: 80%;
     background-color: white;
     border-radius: 20px;
     padding: 25px;
@@ -21,6 +21,17 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center; 
+}
+.answers_image_div{
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.answers_image_div img{
+    object-fit: cover;
+    height: 100%;
 }
 .material-icons.close{
     position: fixed;
@@ -31,12 +42,10 @@ body{
 }
 
 .answers_modal h1{
+    margin: 0px;
     font-size: 32pt;
     font-family: Arial, Helvetica, sans-serif;
 }
-/* .material-icons{
-    transition: color 1s;
-} */
 .material-icons.score1{ 
     font-size: 60px; 
     color: navajowhite;
@@ -61,7 +70,7 @@ body{
 .answers_modal p{
     font-size: 16pt;
     line-height: 1.5;
-    margin: 10px 10%;
+    margin: 0px 5%;
 }
 
 .answers_buttons{
@@ -92,5 +101,8 @@ body{
 }
 
 .buttons_next{
+    display: none;
+}
+.buttons_restart{
     display: none;
 }

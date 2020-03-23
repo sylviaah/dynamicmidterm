@@ -77,6 +77,10 @@ body{
     transition: background-color 0.3s;
 }
 
+.intro_buttons.exit,.intro_buttons.back{
+    background-color: lightgray;
+}
+
 .intro_buttons div:hover{
     cursor: pointer;
     background-color: deepskyblue;

@@ -27,7 +27,7 @@ var popup_data = {
             title:"Don't Forget",
             image:"imgs/img6.jpg",
             subtitle:"Appeal to Authority:",
-            text:"An appeal to authority claims something must be true because someone in “power” says it.",
+            text:"An appeal to authority claims something must be true because someone in 'power' says it.",
             exit:"none",
             back:"flex",
             next:"none",
@@ -79,7 +79,7 @@ var popup_data = {
             title:"Don't Forget",
             image:"imgs/img6.jpg",
             subtitle:"Appeal to Authority:",
-            text:"An appeal to authority claims something must be true because someone in “power” says it.",
+            text:"An appeal to authority claims something must be true because someone in 'power' says it.",
             exit:"flex",
             back:"none",
             next:"none",
@@ -101,8 +101,9 @@ function change_popup(){
 }
 
 function exit_popup(){
-    document.querySelector(".popup_overlay").style.display = "none";
     change_popup();
+    document.querySelector(".popup_overlay").style.display = "none";
+    menuToggle();
 }
 
 function next_popup(){
