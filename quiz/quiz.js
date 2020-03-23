@@ -218,7 +218,7 @@ function next_story(){
             document.querySelector(".answers_image").src = "imgs/img0.19.jpg";
         }else if(quiz_data.scoreNum === 3){
             document.querySelector(".answers_overlay").style.display = "flex";
-            document.querySelector(".answers_title").innerHTML = "You Won";
+            document.querySelector(".answers_title").innerHTML = "You Win!";
             document.querySelector(".answers_subtitle").innerHTML = "You won all 4 stars";
             document.querySelector(".answers_exp").innerHTML = "Now you're an argument expert!";
             document.querySelector(".buttons_next").style.display = "none";

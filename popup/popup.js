@@ -3,7 +3,7 @@ var popup_data = {
     def:[
         {
             title:"What's an Argument?",
-            image:"imgs/img4.jpg",
+            image:"imgs/img0.6.jpg",
             subtitle:"Argument:",
             text:"A good argument must always have the following:<br>"+
             "1. A Reason for the argument<br>"+
@@ -15,7 +15,7 @@ var popup_data = {
         },
         {
             title:"Watch Out!",
-            image:"imgs/img5.jpg",
+            image:"imgs/img0.28.jpg",
             subtitle:"Special Pleading:",
             text:"A special pleading is not a proper argument! It is a fallacy citing that there should be an exception to a general rule.",
             exit:"none",
@@ -25,7 +25,7 @@ var popup_data = {
         },
         {
             title:"Don't Forget",
-            image:"imgs/img6.jpg",
+            image:"imgs/img0.29.jpg",
             subtitle:"Appeal to Authority:",
             text:"An appeal to authority claims something must be true because someone in 'power' says it.",
             exit:"none",
@@ -35,7 +35,7 @@ var popup_data = {
         },
         {
             title:"Watch Out!",
-            image:"imgs/img8.jpg",
+            image:"imgs/img0.30.jpg",
             subtitle:"Gambler's Fallacy:",
             text:"This is not an argument! The fact that an event has happened more in the past, does not mean that it is more likely to happen in the future!",
             exit:"flex",
@@ -45,7 +45,7 @@ var popup_data = {
         },
         {
             title:"Don't Forget",
-            image:"imgs/img9.jpg",
+            image:"imgs/img0.31.jpg",
             subtitle:"Begging the Question",
             text:"This is when the thing that you are trying to prove is already assumed to be true, so you are not actually adding anything to the argument.",
             exit:"none",
@@ -55,7 +55,7 @@ var popup_data = {
         },
         {
             title:"Remember!",
-            image:"imgs/img7.jpg",
+            image:"imgs/img0.6.jpg",
             subtitle:"What is an argument?",
             text:"A good argument must always have the following:<br>"+
             "1. A Reason for the argument<br>"+
@@ -67,7 +67,7 @@ var popup_data = {
         },
         {
             title:"Watch Out!",
-            image:"imgs/img9.jpg",
+            image:"imgs/img0.32.jpg",
             subtitle:"Appeal to Emotion",
             text:"An appeal to emotion is not an argument! It's when you attempt to manipulate an emotional response instead of a valid or compelling argument.",
             exit:"none",
@@ -77,7 +77,7 @@ var popup_data = {
         },
         {
             title:"Don't Forget",
-            image:"imgs/img6.jpg",
+            image:"imgs/img0.29.jpg",
             subtitle:"Appeal to Authority:",
             text:"An appeal to authority claims something must be true because someone in 'power' says it.",
             exit:"flex",
